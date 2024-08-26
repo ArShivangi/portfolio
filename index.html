@@ -3,10 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF Hosting</title>
+    <title>Shivangi Shrivastva's Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0; /* Light background for contrast */
+            font-family: Arial, sans-serif;
+        }
+        .pdf-container {
+            width: 100%;
+            height: 100%;
+            max-width: 100vw;
+            max-height: 100vh;
+            overflow: hidden;
+        }
+        .pdf-frame {
+            width: 100%;
+            height: 100%;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Your PDF Document</h1>
-    <embed src="professional.pdf" type="application/pdf" width="100%" height="600px" />
+    <div class="pdf-container">
+        <iframe class="pdf-frame" src="professional.pdf"></iframe>
+    </div>
 </body>
 </html>
