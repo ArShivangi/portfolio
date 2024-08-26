@@ -5,43 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shivangi Shrivastva's Portfolio</title>
     <style>
+        /* Reset margin and padding */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        body, html {
+
+        /* Make the body and html take up full height */
+        html, body {
             height: 100%;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #f0f0f0; /* Light background for contrast */
+            background-color: #f0f0f0;
             font-family: Arial, sans-serif;
         }
+
+        /* Container for the iframe */
         .pdf-container {
             width: 100%;
             height: 100%;
-            max-width: 100vw;
-            max-height: 100vh;
             overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
+
+        /* Iframe should fill the container */
         .pdf-frame {
-            width: 100%;
-            height: 100%;
+            width: 100vw;
+            height: 100vh;
             border: none;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-            font-size: 24px;
-            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
     <div class="pdf-container">
-        <iframe class="pdf-frame" src="professional.pdf"></iframe>
+        <iframe class="pdf-frame" src="portfolio.pdf"></iframe>
     </div>
 </body>
 </html>
