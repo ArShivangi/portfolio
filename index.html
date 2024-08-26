@@ -3,47 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shivangi Shrivastva's Portfolio</title>
+<title>Shivangi Shrivastva's Page</title>
     <style>
-        /* Reset margin and padding */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Make the body and html take up full height */
-        html, body {
-            height: 100%;
-            width: 100%;
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
+            justify-content: flex-start;
+            min-height: 100vh;
         }
 
-        /* Container for the iframe */
-        .pdf-container {
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        h1 {
+            margin: 20px 0;
+            font-size: 2.5rem;
+            color: #333;
         }
 
-        /* Iframe should fill the container */
-        .pdf-frame {
-            width: 100vw;
-            height: 100vh;
-            border: none;
+        .navbar {
+            background-color: #007bff;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #0056b3;
+        }
+
+        .navbar ul li a.active {
+            background-color: #ffca28;
+            color: #333;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+            color: #555;
+        }
+
+        @media (max-width: 600px) {
+            .navbar ul {
+                flex-direction: column;
+            }
+
+            .navbar ul li {
+                margin-bottom: 10px;
+            }
+
+            .navbar ul li a {
+                font-size: 1rem;
+                padding: 10px 30px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="pdf-container">
-        <iframe class="pdf-frame" src="professional.pdf"></iframe>
+
+    <h1>Shivangi Shrivastva</h1>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="resume.pdf" class="tab" target="_blank">Resume</a></li>
+            <li><a href="professional.pdf" class="tab" target="_blank">Professional Portfolio</a></li>
+            <li><a href="internship.pdf" class="tab" target="_blank">Internship Portfolio</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <p>Welcome to my personal page! Click on the tabs above to view my resume and portfolios.</p>
     </div>
+
 </body>
 </html>
